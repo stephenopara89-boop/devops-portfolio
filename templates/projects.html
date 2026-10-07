@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}
+Projects | My DevOps Portfolio
+{% endblock %}
+
+{% block content %}
+
+<main>
+
+    <h1>My Projects</h1>
+
+    <div class="projects-grid">
+
+        {% for project in projects %}
+
+        <section class="project-card">
+
+            <h2>{{ project.name }}</h2>
+
+            <p>
+                {{ project.description }}
+            </p>
+
+            <p class="technologies">
+                <strong>Technologies:</strong>
+                {{ project.technologies }}
+            </p>
+
+            <div class="project-links">
+
+                {% if project.github_url %}
+                    <a
+                        href="{{ project.github_url }}"
+                        target="_blank"
+                        class="btn"
+                    >
+                        GitHub
+                    </a>
+                {% endif %}
+
+                {% if project.live_url %}
+                    <a
+                        href="{{ project.live_url }}"
+                        target="_blank"
+                        class="btn"
+                    >
+                        Live Project
+                    </a>
+                {% endif %}
+
+            </div>
+
+            <div class="project-actions">
+
+                <a
+                    href="{{ url_for('edit_project', project_id=project.id) }}"
+                    class="edit-link"
+                >
+                    Edit Project
+                </a>
+
+                <form
+                    method="POST"
+                    action="{{ url_for('delete_project', project_id=project.id) }}"
+                >
+                    <button
+                        type="submit"
+                        class="delete-button"
+                    >
+                        Delete Project
+                    </button>
+                </form>
+
+            </div>
+
+        </section>
+
+        {% endfor %}
+
+    </div>
+
+</main>
+
+{% endblock %}

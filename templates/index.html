@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home | My DevOps Portfolio
+{% endblock %}
+
+{% block content %}
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-label">
+            DEVOPS ENGINEER
+        </p>
+
+        <h1>
+            I Build, Automate & Deploy
+            Reliable Applications
+        </h1>
+
+        <p class="hero-description">
+            I build web applications and automate their deployment
+            using Linux, Python, Docker, CI/CD and cloud technologies.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="{{ url_for('projects') }}"
+                class="hero-button primary-button"
+            >
+                View My Projects
+            </a>
+
+            <a
+                href="{{ url_for('contact') }}"
+                class="hero-button secondary-button"
+            >
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="intro-section">
+
+        <h2>What I Do</h2>
+
+        <p>
+            I help businesses build, deploy and maintain reliable
+            applications while automating repetitive infrastructure
+            and deployment tasks.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2 class="skills-title">My DevOps Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <h3>🐧 Linux</h3>
+
+                <p>
+                    Server administration, shell commands,
+                    permissions and system management.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>🐍 Python</h3>
+
+                <p>
+                    Building web applications, automation scripts
+                    and backend services.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>🐳 Docker</h3>
+
+                <p>
+                    Containerizing applications for consistent
+                    development and deployment.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>🔄 CI/CD</h3>
+
+                <p>
+                    Automating testing, building and application
+                    deployments.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>☁️ Cloud</h3>
+
+                <p>
+                    Deploying applications and infrastructure
+                    in cloud environments.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>🔧 Git & GitHub</h3>
+
+                <p>
+                    Version control, collaboration and
+                    automated development workflows.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="cta-section">
+
+        <h2>Have a Project in Mind?</h2>
+
+        <p>
+            Let's build something reliable, automated and scalable.
+        </p>
+
+        <a
+            href="{{ url_for('contact') }}"
+            class="hero-button primary-button"
+        >
+            Get In Touch
+        </a>
+
+    </section>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}
+Edit Project | My DevOps Portfolio
+{% endblock %}
+
+{% block content %}
+
+<main>
+
+    <h1>Edit Project</h1>
+
+    <form method="POST">
+
+        <label for="name">Project Name</label>
+        <br>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            value="{{ project.name }}"
+            required
+        >
+
+        <br><br>
+
+
+        <label for="description">Description</label>
+        <br>
+
+        <textarea
+            id="description"
+            name="description"
+            required
+        >{{ project.description }}</textarea>
+
+        <br><br>
+
+
+        <label for="technologies">Technologies</label>
+        <br>
+
+        <input
+            type="text"
+            id="technologies"
+            name="technologies"
+            value="{{ project.technologies }}"
+            required
+        >
+
+        <br><br>
+
+
+        <label for="github_url">GitHub URL</label>
+        <br>
+
+        <input
+            type="url"
+            id="github_url"
+            name="github_url"
+            value="{{ project.github_url or '' }}"
+        >
+
+        <br><br>
+
+
+        <label for="live_url">Live Project URL</label>
+        <br>
+
+        <input
+            type="url"
+            id="live_url"
+            name="live_url"
+            value="{{ project.live_url or '' }}"
+        >
+
+        <br><br>
+
+
+        <button type="submit">
+            Save Changes
+        </button>
+
+    </form>
+
+</main>
+
+{% endblock %}

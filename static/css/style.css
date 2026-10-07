@@ -1,0 +1,476 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #111827;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* Hero */
+
+header {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+
+header p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* Main content */
+
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+
+main > h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* Sections */
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+section h2 {
+    margin-top: 0;
+    color: #1e3a8a;
+}
+
+
+/* Links */
+
+a {
+    color: #2563eb;
+}
+
+
+a:hover {
+    color: #1d4ed8;
+}
+
+
+/* Buttons */
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* Forms */
+
+form {
+    margin-top: 20px;
+}
+
+
+label {
+    font-weight: 600;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    max-width: 700px;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+
+/* Footer */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 70px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+
+    header {
+        padding: 60px 20px;
+    }
+
+
+    header h1 {
+        font-size: 32px;
+    }
+
+
+    header p {
+        font-size: 17px;
+    }
+
+
+    main {
+        margin-top: 30px;
+    }
+
+}
+                                                                                                                                                         
+/* Project cards */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.project-card p {
+    color: #4b5563;
+}
+
+
+.technologies {
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+
+/* Project links */
+
+.project-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+.btn:hover {
+    background: #1d4ed8;
+    color: white;
+}
+
+
+/* Project actions */
+
+.project-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+
+.edit-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+
+.delete-button {
+    background: #dc2626;
+}
+
+
+.delete-button:hover {
+    background: #b91c1c;
+}
+                                                                                                                                                               
+                                                                                                                                                          
+/* Home page */
+
+
+/* Hero */
+
+.hero {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+.hero-label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    color: #93c5fd;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0 auto 25px;
+}
+
+
+.hero-description {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    font-size: 19px;
+    color: #dbeafe;
+}
+
+
+/* Hero buttons */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.hero-button {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+.primary-button {
+    background: white;
+    color: #1e3a8a;
+}
+
+
+.primary-button:hover {
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+
+.secondary-button {
+    border: 2px solid white;
+    color: white;
+}
+
+
+.secondary-button:hover {
+    background: white;
+    color: #1e3a8a;
+}
+
+
+/* Introduction */
+
+.intro-section {
+    text-align: center;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.intro-section h2 {
+    font-size: 32px;
+}
+
+
+/* Skills */
+
+.skills-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+
+.skill-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+.skill-card h3 {
+    margin-top: 0;
+    color: #1e3a8a;
+}
+
+
+.skill-card p {
+    color: #4b5563;
+}
+
+
+/* Call to action */
+
+.cta-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.cta-section h2 {
+    font-size: 32px;
+}
+
+
+.cta-section p {
+    margin-bottom: 25px;
+}
+
+
+/* Mobile hero */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .hero-button {
+        width: 220px;
+        text-align: center;
+    }
+
+}

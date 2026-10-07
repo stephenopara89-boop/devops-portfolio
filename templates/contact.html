@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}
+Contact | My DevOps Portfolio
+{% endblock %}
+
+
+{% block content %}
+
+<main>
+
+    <h1>Contact Me</h1>
+
+    <p>
+        Interested in working together?
+        Send me a message.
+    </p>
+
+
+    <form>
+
+        <label>Name</label>
+        <br>
+
+        <input type="text" name="name">
+
+        <br><br>
+
+
+        <label>Email</label>
+        <br>
+
+        <input type="email" name="email">
+
+        <br><br>
+
+
+        <label>Message</label>
+        <br>
+
+        <textarea name="message"></textarea>
+
+        <br><br>
+
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</main>
+
+{% endblock %}
